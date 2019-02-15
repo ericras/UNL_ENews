@@ -43,12 +43,18 @@ class UNL_ENews_Newsletter_Stories extends UNL_ENews_StoryList
                 'news' => array(
                     0 => array(),
                     1 => array(),
-                    2 => array()
+                    2 => array(),
+                    3 => array(),
+                    4 => array(),
+                    5 => array(),
                 ),
                 'ads'  => array(
                     0 => array(),
                     1 => array(),
-                    2 => array()
+                    2 => array(),
+                    3 => array(),
+                    4 => array(),
+                    5 => array(),
                 )
             );
 
@@ -111,6 +117,15 @@ class UNL_ENews_Newsletter_Stories extends UNL_ENews_StoryList
                     break;
                 case 0:
                     $columnOptions['id'] = $prefix . '2';
+                    break;
+                case 4:
+                    $columnOptions['id'] = $prefix . 'Mid';
+                    break;
+                case 5:
+                    $columnOptions['id'] = $prefix . '4';
+                    break;
+                case 3:
+                    $columnOptions['id'] = $prefix . '5';
                     break;
             }
         }

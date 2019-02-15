@@ -44,7 +44,7 @@ define([
 				$('.story .story-content').on('click', 'a', function(e) {
 					return false;
 				})
-				WDN.loadJS('/wdn/templates_3.1/scripts/plugins/hoverIntent/jQuery.hoverIntent.min.js', plugin.setupToolsHover);
+				WDN.loadJS('/wdn/templates_4.1/scripts/plugins/hoverIntent/jquery.hoverIntent.js', plugin.setupToolsHover);
 				plugin.setupDragAndSort();
 				plugin.initDraggable($('.adArea .story'));
 			});
@@ -407,7 +407,7 @@ define([
 		saveStoryOrder : function(sortable, callback) { //this function determines the order of the stories and sends it to the DB.
 			sortable = sortable || '.newsColumn, .adArea';
 			callback = callback || $.noop;
-			var numColumns = 3;
+			var numColumns = 6;
 			var postData = {
 				"_type":"addstory",
 				"story_id":{}
